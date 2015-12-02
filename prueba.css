@@ -1,0 +1,64 @@
+.colores:before, .colores:after{
+  content: " ";
+  display: table;
+}
+
+.colores:after {
+  clear: both;
+}
+
+.colores {
+	width: 50%;
+}
+[class*="color-"] {
+	
+	width:25%;
+	min-height: 50px;
+	float: left;
+	box-sizing: border-box;
+	padding: 5px 10px;
+	border: 3px solid #fff;
+}
+.color-1 { 	background-color: #0dc0c0;}
+.color-2 { background-color: #98a0a8;}
+.color-3 { background-color: #fafafa;}
+.color-4 { background-color: #888;}
+.color-5 { background-color: #c9d1d6;}
+.color-6 { background-color: #2d323a;}
+.color-7 { background-color: #24282e;}
+.color-8 { background-color: #384147;}
+.color-9 { background-color: #32383f;}
+.color-10 { background-color: #e8edef;}
+.color-11 { background-color: #009ca8;}
+.color-12 { background-color: #323a45;}
+.color-13 { background-color: #f4f4f4;}
+.color-14 { background-color: #444;}
+.color-15 { background-color: #555;}
+.color-16 { background-color: #363c46;}
+
+.colores span {
+	background-color: #fff;
+	font-weight: bold;
+	padding: 5px ;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.open-sans, .dosis {
+	width: 50%;
+	background-color:#888;
+	margin: 1% 0;
+	color: #fff;
+
+}
+.open-sans {
+	font-family: 'Open Sans', sans-serif;
+	float:left;
+}
+.dosis {
+	font-family: 'Dosis', serif;
+	float: left;
+}
+span>h3, span>h4, span>h5 {
+	display: inline !important;
+}

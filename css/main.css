@@ -3,9 +3,12 @@
 }
 /*--------------Estilos Generales--------------*/
 body {
-
+	font-family:  sans-serif;
+	color: #98a0a8;
 }
-
+a:hover {
+	text-decoration: none;
+}
 ul {
 	padding: 0;
 	list-style-type: none;
@@ -13,11 +16,31 @@ ul {
 img {
 	width: 100%;
 }
+h3, h4, h5 {
+	color: #555;
+	font-weight: 500;
+}
+.text-negrita {
+	font-weight: bold;
+}
+.text-white {
+	color: #fafafa !important;
+}
+.filtro-dark-opacity {
+	background-color: rgba(0,0,0,.6);
+	height: 100%;
+}
+.bg-gris {
+	background-color: #f4f4f4;
+}
+
+
 
 /* Menú Navegación */
 
 .menu-navegacion nav {
 	background-color: transparent !important;
+	color: #fafafa;
 }
 .menu-navegacion .navbar-header .navbar-brand {
 	height: 61px !important;
@@ -40,7 +63,7 @@ img {
 /*color predeterminado de links NO ACTIVOS*/
 	.navbar-default .navbar-nav>li>a {
     	font-size: 15px;
-    	color: #fff;
+    	color: #fafafa;
     	padding: 20px 24px;
     	-webkit-transition: all .35s;
     	   -moz-transition: all .35s;
@@ -83,28 +106,27 @@ img {
 	}
 /*fin Navegación*/
 
-
+/*-------------------HERO-------------------*/
 .Hero {
 	background: url('../img/background/hero.jpg');
 	-webkit-background-size: cover;
 	background-size: cover;
 	height: 680px; /*de referencia, cambiarlo usando el paddiing de los elementos que contiene*/
-	color: #fff;
 }
-	.hero-content {
-		padding:10%;
-	}
+.hero-content {
+	padding:15%;
+}
 	/*links*/
 	.hero-content>a {
 		padding: 0.8em;
 		color: #fff;
-		text-shadow: ; /*Parece un blanco mas oscuro*/
+		text-shadow:  ; /*Parece un blanco mas oscuro*/
 		font-weight: bold;
 	}
 	.hero-content .a-hero-dark {
-		background-color: #555;
+		background-color: #2D323A;
 		border: 1px solid #444;
-		color:;/*Parece que en estado incativo tiene un color mas oscuro que blanco*/
+		color: #C9D1D6;/*Parece que en estado incativo tiene un color mas oscuro que blanco*/
 	}
 	.hero-content .a-hero-light {
 		background-color: rgba(255,255,255,.1);
@@ -112,10 +134,97 @@ img {
 		color:;/*Parece que en estado incativo tiene un color mas oscuro que blanco*/
 	}
 
+/*-------------------FEATURES-------------------*/
+	
+	.icon-features {
+	color: #009ca8;
+	}
+	/*Initial Features*/
+	.icon-f-initial {
+		font-size: 45px;
+	}
+	.initial-features>.container {
+		padding: 0 3em 6em 3em;
+	}
+	.feature-content {
+		margin-top: 5em;
+		padding-left: 4em;
+		padding-right: 4em;
+	}
+	/*More Features*/
+	.encabezado-more-f .container img{
+		display: block;
+		width: 80%;
+		margin: 0 auto;
+	}
+	.content-more-feature .col-xs-1 {
+		padding: 0;
+	}
+		.icon-f-more {
+			font-size: 40px;
+			float: right;
+		}
+	.content-more-feature .row 	{
+		margin: 3em 0;
+	}
+	
+
+/*-------------------PORTAFOLIO-------------------*/
+/*-------------------CALL TO ACTION-------------------*/
+	.Call-to-action {
+		background: url('../img/background/city.jpg');
+		-webkit-background-size: cover;
+		background-size: cover;
+		height: 450px;
+	}
+/*-------------------PACKAGE-------------------*/
 /*-------------------TESTIMONIAL-------------------*/
 	.customer-img {
 		width: 90px;
 		height: 90px;
 		margin: 1% auto;
 	}
-	
+/*-------------------CONTACT-------------------*/
+.Contact {
+	background: url('../img/background/contactus.jpg');
+	-webkit-background-size: cover;
+	background-size: cover;
+	height: 730px;
+}	
+	/*Form*/
+	.Contact form input {
+
+	}
+	.Contact form .text {
+		display: block;
+		width: 88%;
+		height: 3em;
+		margin-bottom: 1.5em;
+		background-color: rgba(255,255,255,.1);
+		border: none;
+	}
+/*-------------------FOLLOW US-------------------*/
+.Follow-us>.container {
+	padding: 3% 20%;
+}
+
+.Follow-us h3, .Follow-us p, .Follow-us .social-icons {
+	margin-bottom: 5%;
+}
+.Follow-us .social-icons span{
+	font-size: 26px;
+	color: #323a45;
+	margin: 3px;	
+}
+
+/*-------------------FOOTER-------------------*/
+footer {
+	background-color: #222;
+	color: #888;
+}
+footer p {
+	margin: 2em auto;
+}
+* {
+	outline: 2px solid rgba(0, 0, 250, .3);
+}
