@@ -149,6 +149,23 @@ h3, h3 + p {
     	text-shadow:2px 2px 1px #222;
     	background-color: transparent;
 	}
+
+/*media queries RESPONSIVE para el menú */
+	@media (max-width: 767px) {
+
+		.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+    		color: #333;
+    	}
+    	.navbar-default .navbar-nav .open .dropdown-menu>li>a:focus,
+		.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
+    		color: #222;
+    		background-color: #DB174F;
+    	}
+    	.navbar-collapse .navbar-nav {
+    		width: 102%;
+    	}
+	}
+
 /*fin Navegación*/
 
 /*-------------------HERO-------------------*/
@@ -156,10 +173,10 @@ h3, h3 + p {
 	background: url('../img/background/hero.jpg');
 	-webkit-background-size: cover;
 	background-size: cover;
-	height: 680px; /*de referencia, cambiarlo usando el paddiing de los elementos que contiene*/
+	/*height: 680px; de referencia, cambiarlo usando el paddiing de los elementos que contiene*/
 }
 .hero-content {
-	padding: 12% 15%;
+	padding: 12% 15% 18% 12%;
 }
 .hero-content h1 {
 	font-size: 46px;
@@ -315,7 +332,6 @@ h3, h3 + p {
 	background: url('../img/background/contactus.jpg');
 	-webkit-background-size: cover;
 	background-size: cover;
-	height: 730px;
 }
 .Contact h3, .Contact h4 {
 	color: #fafafa;
@@ -341,6 +357,7 @@ h3, h3 + p {
 		font-weight: bold;
 		padding: 5px 15px;
 		border: 1px solid #009ca8;
+		margin: 7%;
 	}
 	/*Contact-datos*/
 		.contact-datos h4, .datos>li {

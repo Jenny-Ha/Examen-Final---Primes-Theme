@@ -44,10 +44,10 @@
                       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-right">
                           <li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
-                          <li><a href="#">Features</a></li>
-                          <li><a href="#">Portafolio</a></li>
-                          <li><a href="#">Pricing</a></li>
-                          <li><a href="#">Contact</a></li>
+                          <li><a href="#Features">Features</a></li>
+                          <li><a href="#Portafolio">Portafolio</a></li>
+                          <li><a href="#Pricing">Pricing</a></li>
+                          <li><a href="#Contact">Contact</a></li>
                         </ul>
                       </div><!-- .navbar-collapse -->
                   </div><!-- .container -->
@@ -64,7 +64,7 @@
 
   </header>
 
-  <section class="Features">
+  <section class="Features" id="Features">
       <section class="initial-features text-center">
           <div class="container">
               <div class="row">
@@ -180,7 +180,7 @@
       </section> <!--fin More Feature-->
   </section> <!--fin section principal Features-->
 
-  <section class="Portafolio bg-gris">
+  <section class="Portafolio bg-gris" id="Portafolio">
       <div class="portafolio-encabezado text-center">
           <div class="container">
               <h3>Portafolio</h3>
@@ -268,7 +268,7 @@
       </div>
   </section>
 
-  <section class="Package text-center bg-gris">
+  <section class="Package text-center bg-gris" id="Pricing">
       <div class="package-encabezado">
           <h3>Choose the package</h3>
           <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
@@ -353,7 +353,7 @@
       </div>
   </section>
 
-  <section class="Contact text-white">   
+  <section class="Contact text-white" id="Contact">   
       <div class="filtro-dark-opacity">
           <div class="container">
               <div class="contact-info text-center">
@@ -366,7 +366,7 @@
                       <form action="ejemplo.php" method="get">
                           <input class="text" type="text" name="email" placeholder="Email">
                           <input class="text" type="text" name="nombre" placeholder="Subject">
-                          <input class="text text-message" type="text" name="mensaje" placeholder="Message">
+                          <textarea class="text text-message" type="text" rows="3" name="mensaje" placeholder="Message"></textarea>
                           <input class="boton-submit" type="submit" name="Submit" value="Submit" title="Haz click aquí para enviar tu información">
                       </form>
                   </div>
@@ -410,6 +410,7 @@
       </div>
   </footer>
 
-
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
